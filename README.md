@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-- Xcode 15+
+- Xcode 26+
 - [Supabase CLI](https://supabase.com/docs/guides/cli) (`brew install supabase/tap/supabase`)
 - Docker running
 
