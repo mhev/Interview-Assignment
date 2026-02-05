@@ -66,7 +66,7 @@ In my experience, streaming too fast makes responses feel robotic and hard to fo
 I found that LazyVStack had issues re-rendering when messages loaded asynchronously after view creation. VStack guarantees the view updates when the data changes, which is more important than the minor performance gain from lazy loading in a chat context.
 
 ### Save Memory button
-I added this as a simple way to demo the `summarize_memory` edge function. It's not strictly required by the spec, but it makes it easy to verify the feature works without needing to dig into logs or the database.
+I added this as a simple way to demo the `summarize_memory` edge function. It's not strictly required by the spec, but it makes it easy to verify the feature works without needing to dig into the database. Take a look at the console logs in Xcode to see it in action.
 
 ### Offline queue with UserDefaults
 For this demo, UserDefaults is simpler and sufficient. In production I'd use SwiftData or Core Data.
