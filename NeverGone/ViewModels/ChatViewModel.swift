@@ -80,7 +80,7 @@ final class ChatViewModel {
         // Check network status
         if !network.isConnected {
             print("[ChatViewModel] Offline - queueing message")
-            let pending = queue.enqueue(sessionId: session.id, content: messageText)
+            let pending = queue.enqueue(sessionId: session.id, content: messageText) //which goes to userdefaults
             
             let userMessage = ChatMessage(
                 id: pending.id,
